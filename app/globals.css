@@ -491,7 +491,7 @@ body {
   justify-content: space-between;
   gap: 8px;
   color: #f2f7ff;
-  font-size: 1.08rem;
+  font-size: 0.9rem;
   font-weight: 700;
 }
 
@@ -501,7 +501,11 @@ body {
   color: #e8f0ff;
 }
 
-.summary-note {
+.summary-item--primary .summary-line {
+  margin-bottom: 2px;
+}
+
+p.summary-note {
   margin: 0 0 16px !important;
   color: #7f95b8 !important;
   font-size: 0.74rem !important;
@@ -536,7 +540,11 @@ body {
   font-size: 0.76rem;
 }
 
-.summary-group .summary-subline:last-child {
+.summary-panel p.summary-subline {
+  margin: 0 0 2px !important;
+}
+
+.summary-group p.summary-subline:last-child {
   margin-bottom: 0;
 }
 
