@@ -502,13 +502,13 @@ body {
 }
 
 .summary-note {
-  margin: 0 0 8px !important;
+  margin: 0 0 16px !important;
   color: #7f95b8 !important;
   font-size: 0.74rem !important;
 }
 
 .summary-group {
-  margin-bottom: 8px;
+  margin-bottom: 14px;
 }
 
 .summary-extra-section {
@@ -527,13 +527,17 @@ body {
 }
 
 .summary-subline {
-  margin: 0 0 3px;
+  margin: 0 0 2px;
   display: flex;
   align-items: baseline;
   justify-content: space-between;
   gap: 10px;
   color: #7e94b6;
   font-size: 0.76rem;
+}
+
+.summary-group .summary-subline:last-child {
+  margin-bottom: 0;
 }
 
 .summary-line > span:first-child,

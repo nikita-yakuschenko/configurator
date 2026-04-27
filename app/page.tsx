@@ -779,8 +779,14 @@ export default function Home() {
             </div>
           ))}
           <hr />
-          <p>Стоимость участка: {formatPrice(totals.base)}</p>
-          <p>Стоимость доп. услуг: {formatPrice(totals.options)}</p>
+          <p className="summary-subline">
+            <span>Стоимость участка</span>
+            <span>{formatPrice(totals.base)}</span>
+          </p>
+          <p className="summary-subline">
+            <span>Стоимость доп. услуг</span>
+            <span>{formatPrice(totals.options)}</span>
+          </p>
           <p className="summary-total-line">
             <span>ИТОГО</span>
             <span>{formatPrice(totals.finalTotal)}</span>
